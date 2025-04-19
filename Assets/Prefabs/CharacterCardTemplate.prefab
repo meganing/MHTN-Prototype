@@ -144,12 +144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6168627148044636011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81708a2b669542e8acc8d064df90bf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ce9ec7eb2706466bac555cf2a4a7950, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterImage: {fileID: 7158865042103921051}
   characterName: {fileID: 5925217805467971830}
-  characterID: 0
 --- !u!1 &6305666997780340054
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,11 +256,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 893574131469322218}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2, y: 154}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &8415409083834799084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -355,7 +354,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.012756348, z: 0, w: -0.43930054}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

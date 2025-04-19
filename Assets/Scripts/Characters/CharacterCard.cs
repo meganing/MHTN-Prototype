@@ -3,22 +3,40 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class CharacterCard : MonoBehaviour
+/// <summary>
+/// This class represents a character card in the game.
+/// </summary>
+public sealed class CharacterCard : UserInterfaceBehaviour
 {
     /// <summary>
     /// The image of the character.
     /// </summary>
-    public Image characterImage;
+    [SerializeField]
+    private Image characterImage;
 
     /// <summary>
     /// The name of the character.
     /// </summary>
-    public TextMeshProUGUI characterName;
+    [SerializeField]
+    private TextMeshProUGUI characterName;
 
     /// <summary>
-    /// The description of the character.
+    /// The ID of the character.
     /// </summary>
-    public int characterID;
+    private int characterID = -1; // Invalid ID for checking if the character is set
+
+    /// <summary>
+    /// Set the character data to this card.
+    /// </summary>
+    /// <param name="data">The character data to set.</param>
+    public void SetCharacterData(CharacterData data)
+    {
+        // Set the character image and name using the data provided
+        characterImage.sprite = data.portrait;
+        characterName.text = data.characterName;
+        // Set the character ID used when selecting the character
+        characterID = data.characterID;
+    }
 
     /// <summary>
     /// The button to select the character.
@@ -27,8 +45,8 @@ public class CharacterCard : MonoBehaviour
     public void SelectCharacter()
     {
         // Save the selected character ID for later use
-        PlayerPrefs.SetInt("SelectedCharacterID", characterID);
+        PlayerPrefs.SetInt(ProjectValueConstant.PLAYER_PREFS_SELECTED_CHARACTER_ID, characterID);
         // Load the character profile scene
-        SceneManager.LoadScene("CharacterProfile");
+        SceneManager.LoadScene(ProjectValueConstant.SCENE_NAME_CHARACTER_PROFILE);
     }
 }
