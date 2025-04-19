@@ -80,3 +80,7 @@ crashlytics-build.properties
 
 # Ignore the Unity Package lock file
 Packages/packages-lock.json
+
+# Ignore the cached files in MacOS
+.DS_Store
+*.DS_Store
