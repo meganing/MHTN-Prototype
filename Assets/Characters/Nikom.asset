@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c50294e4d2f94ce6b02096d966dc3a1, type: 3}
-  m_Name: Pakorn
+  m_Name: Nikom
   m_EditorClassIdentifier: 
-  characterName: Pakorn
-  characterID: 0
-  portrait: {fileID: -1158664984073149484, guid: c7697379d02d14424b80935b7d54a0ee, type: 3}
-  fullBodyImage: {fileID: -1158664984073149484, guid: c7697379d02d14424b80935b7d54a0ee, type: 3}
-  characterDescription: 'I am a Uni student '
+  characterName: Nikom
+  characterID: 1
+  portrait: {fileID: -3284633943500322947, guid: b3e9230d9771c4aa0b18ba0b7100eaf4, type: 3}
+  fullBodyImage: {fileID: -3284633943500322947, guid: b3e9230d9771c4aa0b18ba0b7100eaf4, type: 3}
+  characterDescription: I am a good person
   stories:
   - storyID: 1
     unlockedThumbnail: {fileID: -1158664984073149484, guid: c7697379d02d14424b80935b7d54a0ee, type: 3}
