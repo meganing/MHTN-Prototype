@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueID: pakron-1
   pages:
   - {fileID: 11400000, guid: 2699b83719c3d4438a8f20565182add8, type: 2}
-  - {fileID: 11400000, guid: 2699b83719c3d4438a8f20565182add8, type: 2}
+  - {fileID: 11400000, guid: 42770e56311ba45ca82527220ac8248c, type: 2}
   - {fileID: 11400000, guid: 2699b83719c3d4438a8f20565182add8, type: 2}
   - {fileID: 11400000, guid: 2699b83719c3d4438a8f20565182add8, type: 2}
   - {fileID: 11400000, guid: 2699b83719c3d4438a8f20565182add8, type: 2}
